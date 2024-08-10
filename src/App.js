@@ -16,7 +16,7 @@ const App = () => {
 
       <Products handleCount={handleCount} />
       {/* <Next handlePlusClick={handlePlusClick} /> */}
-      <Next handleCount={handleCount}/>
+      <Next handlePlusClick={handleCount}/>
 
 
 
