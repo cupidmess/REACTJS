@@ -3,7 +3,7 @@ import { data } from './Data.js';
 import Button from "./Button.js";
 // import Cart from "./AddToCart.js"
 // import {handlePlusClick} from './AddToCart.js';
-export default function Next() {
+export default function Next({handlePlusClick}) {
 const [index, setIndex] = useState(0);
 let hasNext = index < data.length - 1;
 
@@ -29,7 +29,7 @@ let hasNext = index < data.length - 1;
             <h3 className='font-underline text-center font-bold text-gray-500'>
               Rs {d.price}
             </h3>
-
+              <Button handlePlusClick={handlePlusClick}/>
             
            
           </div>
